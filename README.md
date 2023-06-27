@@ -14,8 +14,16 @@
 # tambah jurnal simpan
 ![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/ff04501d-1a9d-401d-8bd7-d90eba85e913)
 
+# telah di tambahkan
+![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/dda9c566-5f46-426e-84fc-3b7eea8b4bfa)
+
 # edit jurnal
 ![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/9a52fc99-d1e5-45d4-a77b-55c7c8817e09)
 
+# setelah di edit
+![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/e386120d-6e75-4987-84da-d8d596fb5966)
+
 # Profile
 ![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/a67d9334-e12a-443c-81bb-7c82096c09b0)
+
+## Log Out Kembali Ke tampilan Awal

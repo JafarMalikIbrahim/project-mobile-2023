@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:uas_jurnal/login/first_screen.dart';
 import 'package:uas_jurnal/pages/edit.dart';
 import 'package:uas_jurnal/pages/form.dart';
+import 'package:uas_jurnal/login/first_screen.dart';
 
 import '../helpers/DBhelper.dart';
 import '../login/login.dart';

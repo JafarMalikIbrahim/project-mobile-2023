@@ -156,7 +156,7 @@ class _LoginPageState extends State<LoginPage> {
               const Text(
                 'or',
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Color.fromARGB(255, 13, 11, 11),
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),

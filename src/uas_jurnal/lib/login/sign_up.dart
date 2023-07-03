@@ -2,64 +2,111 @@ import 'package:flutter/material.dart';
 import 'package:uas_jurnal/login/login.dart';
 import 'package:uas_jurnal/services/firebase_auth.dart';
 
+import 'package:flutter/material.dart';
+import 'package:uas_jurnal/login/login.dart';
+import 'package:uas_jurnal/services/firebase_auth.dart';
+import 'package:http/http.dart' as http;
+import 'package:cached_network_image/cached_network_image.dart';
+
 class Signup extends StatelessWidget {
-  const Signup({super.key});
+  const Signup({Key? key}) : super(key: key);
+
+  Future<Widget> _fetchBackgroundImage() async {
+    final response = await http.get(Uri.parse(
+        'https://i.pinimg.com/originals/76/0e/08/760e084d26fc9516eeb44a5739df2740.jpg'));
+    if (response.statusCode == 200) {
+      return CachedNetworkImage(
+        imageUrl:
+            'https://i.pinimg.com/originals/76/0e/08/760e084d26fc9516eeb44a5739df2740.jpg',
+        placeholder: (context, url) => Container(),
+        errorWidget: (context, url, error) => Icon(Icons.error),
+        fit: BoxFit.cover,
+      );
+    } else {
+      throw Exception('Failed to load background image');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        padding: const EdgeInsets.all(16.0),
-        children: <Widget>[
-          const SizedBox(height: 50),
-          // logo
-          Column(
-            children: [
-              FlutterLogo(
-                size: 120,
-              ),
-              SizedBox(height: 30),
-              Text(
-                'Welcome!',
-                style: TextStyle(fontSize: 24),
-              ),
-            ],
-          ),
-          const SizedBox(height: 20),
-
-          const Padding(
-            padding: EdgeInsets.all(8.0),
-            child: SignupForm(),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+      body: FutureBuilder<Widget>(
+        future: _fetchBackgroundImage(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          } else if (snapshot.hasError) {
+            return Center(
+              child: Text('Failed to load background image'),
+            );
+          } else {
+            return Stack(
+              children: [
+                snapshot.data!,
+                ListView(
+                  padding: const EdgeInsets.all(16.0),
                   children: <Widget>[
-                    const Text('Sudah Punya Akun ?',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 13)),
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
-                      child: const Text(' Login !',
-                          style: TextStyle(
-                              fontSize: 13,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.blue)),
-                    )
+                    const SizedBox(height: 50),
+                    // logo
+                    Column(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Image.asset(
+                          'assets/logo1.png',
+                          width: 100,
+                          height: 100,
+                        ),
+                        const SizedBox(height: 20),
+                      ],
+                    ),
+                    const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: SignupForm(),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Expanded(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              const Text(
+                                'Sudah Punya Akun ?',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                ),
+                              ),
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.pop(context);
+                                },
+                                child: const Text(
+                                  ' Login !',
+                                  style: TextStyle(
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.blue,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
                   ],
-                )
+                ),
               ],
-            ),
-          ),
-        ],
+            );
+          }
+        },
       ),
     );
   }

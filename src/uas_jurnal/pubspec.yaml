@@ -39,6 +39,7 @@ dependencies:
   firebase_core: ^2.14.0
   sqflite: ^2.2.8+4
   cached_network_image: ^3.2.3
+  image_network: ^2.5.2
 
 dev_dependencies:
   flutter_test:

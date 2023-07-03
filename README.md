@@ -1,29 +1,77 @@
-# PROJECT UAS 2023 JOURNAL HARIAN
+# JURNAL HARIAN
+
+NAMA : JA'FAR MALIK IBRAHIM
+
+NIM : 2131750007
+
+PRODI : D3 MANAJEMEN INFORMATIKA
+
+---
+
+# DESKRIPSI
+
+## Aplikasi jurnal harian adalah perangkat lunak yang dirancang untuk membantu pengguna mencatat dan menyimpan catatan harian mereka. Ini adalah alat digital yang memungkinkan pengguna untuk membuat entri harian, mencatat pengalaman, pemikiran, perasaan, atau peristiwa yang terjadi dalam hidup mereka.
+
+---
 
 # CARA KERJA APLIKASI
 
-## login
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/13e639e6-d1b0-47bf-a0c8-8bff964b7891)
+1. LOGIN E-MAIL DAN PASSWORD, JIKA BELUM MEMPUNYAI AKUN SILAHKAN DAFTAR TERLEBIH DAHULU, PASTIKAN MENGISI KOLOM EMAIL DAN PASSWORD BENAR. ANDA JUGA BISA LOGIN MENGGUNAKAN GOOGLE
 
-# pertama kita login menggunakan akun google terlebih dahulu
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/2f6d07a7-5564-4365-9b21-e3a14df2757e)
+2. REGISTER DENGAN MENGISI EMAIL, PASSWORD, DAN NAMA PENGGUNA CEKLIS PRIVACY POLICE NYA DAN KLIK TOMBOL SIGN UP. PADA HALAMAN REGISTER WALLPAPER MENGGUNAKAN HTTP REQUEST YG MANA LINK FOTO MENGAMBIL DARI WEBSITE.
 
-# Setelah di tampilan awal klik tombol tambah
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/d274c992-ac0d-4d6e-891f-ddd0e038e6aa)
+3. HALAMAN PERTAMA, DISINI ADA FITUR ADD JIKA INGIN MENAMBAH ENTRI BARU, SETELAH DI KLIK PASTIKAN KOLOM JUDUL DAN ISI SUDAH TERISI APABILA DI BIARKAN KOSONG AKAN ADA POP UP WARNING, SETELAH TERISI SEMUA KLIK TOMBOL SIMPAN DAN ENTRI BARU TELAH DI TAMPILKAN DI HALAMAN PERTAMA.
 
-# tambah jurnal simpan
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/ff04501d-1a9d-401d-8bd7-d90eba85e913)
+4. EDIT , JIKA INGIN MENGUBAH CATATAN YG TELAH DI BUAT TADI ANDA TINGGAL KLIK DATA DI HALAMAN UTAMA, OTOMATIS AKAN BERALIH KE TAMPILAN EDIT, KOLOM TIDAK BOLEH KOSONG KARENA AKAN MUNCUL POP UP WARNING, SAAT ANDA KLIK TOMBOL SIMPAN AKAN MUNCUL ANIMASI LOADING.
 
-# telah di tambahkan
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/dda9c566-5f46-426e-84fc-3b7eea8b4bfa)
+5. JIKA DATA SUDAH BANYAK ANDA BISA SCROLL DATA KEBAWAH DAN JIKA ANDA BINGUNG INGIN MENCARI DATA TERTENTU. TENANG APLIKASI INI SUDAH TERSEDIA FITUR PENCARIAN, ANDA TINGGAL MENULIS KATA KUNCI YANG INGIN DI CARI.
 
-# edit jurnal
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/9a52fc99-d1e5-45d4-a77b-55c7c8817e09)
+6. TERAKHIR TAMPILAN PROFIL YANG MANA MENAMPILKAN DATA ANDA.
 
-# setelah di edit
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/e386120d-6e75-4987-84da-d8d596fb5966)
+7. TOMBOL LOG OUT UNTUK KEMBALI KE HALAMAN LOG IN.
 
-# Profile
-![image](https://github.com/JafarMalikIbrahim/project-mobile-2023/assets/92065895/a67d9334-e12a-443c-81bb-7c82096c09b0)
+NB: UNTUK TAMPILAN PROFIL BELUM BISA MENAMPILKAN DATA UNTUK LOGIN EMAIL DAN PASSWORD HANYA BISA MENAMPILKAN LOGIN WITH GOOGLE
 
-## Log Out Kembali Ke tampilan Awal
+---
+
+# SCREENSHOT
+
+LOGIN
+
+![Alt text](image.png)
+
+INPUT EMAIL DAN PASSWORD
+
+![Alt text](image-1.png)
+
+HALAMAN REGISTER
+
+![Alt text](image-9.png)
+
+HALAMAN PERTAMA
+
+![Alt text](image-2.png)
+
+TAMBAH JURNAL
+
+![Alt text](image-3.png)
+
+POP UP WARNING
+
+![Alt text](image-4.png)
+
+EDIT JURNAL
+
+![Alt text](image-5.png)
+
+ANIMASI LOADING
+
+![Alt text](image-6.png)
+
+FITUR PENCARIAN
+
+![Alt text](image-7.png)
+
+PROFIL DAN LOG OUT
+
+![Alt text](image-8.png)
